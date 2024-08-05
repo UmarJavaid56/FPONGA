@@ -17,9 +17,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Computer Engineering/Projects/Nandland GoBoard/Project_5/Project_5_Implmnt/sbt/outputs/bitmap/Seven_Segment_Display_bitmap.bin</File>
-			<FileTime>08/03/24 08:03:17</FileTime>
-			<JedecChecksum>0x92BC</JedecChecksum>
+			<File>C:/Computer Engineering/Projects/Nandland GoBoard/Project 6/Project_6/Project_6_Implmnt/sbt/outputs/bitmap/LED_Blink_Top_bitmap.bin</File>
+			<FileTime>08/05/24 10:06:18</FileTime>
+			<JedecChecksum>0x2831</JedecChecksum>
 			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -61,7 +61,7 @@
 					<IDCode>0x10</IDCode>
 					<Package>8-pin SOIC</Package>
 					<Operation>SPI Flash Erase,Program,Verify</Operation>
-					<File>C:/Computer Engineering/Projects/Nandland GoBoard/Project_5/Project_5_Implmnt/sbt/outputs/bitmap/Seven_Segment_Display_bitmap.bin</File>
+					<File>C:/Computer Engineering/Projects/Nandland GoBoard/Project 6/Project_6/Project_6_Implmnt/sbt/outputs/bitmap/LED_Blink_Top_bitmap.bin</File>
 					<AddressBase>0x00000000</AddressBase>
 					<EndAddress>0x00008000</EndAddress>
 					<DeviceSize>1</DeviceSize>
