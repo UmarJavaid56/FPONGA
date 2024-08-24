@@ -17,9 +17,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Computer Engineering/Projects/Nandland GoBoard/Project_7/Project_7/Project_7_Implmnt/sbt/outputs/bitmap/UART_Loopback_bitmap.bin</File>
-			<FileTime>08/13/24 20:38:06</FileTime>
-			<JedecChecksum>0x91BF</JedecChecksum>
+			<File>C:/Computer Engineering/Projects/Nandland GoBoard/Project_7/Project_7/Project_7_Implmnt/sbt/outputs/bitmap/VGA_Test_Patterns_Top_bitmap.bin</File>
+			<FileTime>08/24/24 05:23:39</FileTime>
+			<JedecChecksum>0x1610</JedecChecksum>
 			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -61,7 +61,7 @@
 					<IDCode>0x10</IDCode>
 					<Package>8-pin SOIC</Package>
 					<Operation>SPI Flash Erase,Program,Verify</Operation>
-					<File>C:/Computer Engineering/Projects/Nandland GoBoard/Project_7/Project_7/Project_7_Implmnt/sbt/outputs/bitmap/UART_Loopback_bitmap.bin</File>
+					<File>C:/Computer Engineering/Projects/Nandland GoBoard/Project_7/Project_7/Project_7_Implmnt/sbt/outputs/bitmap/VGA_Test_Patterns_Top_bitmap.bin</File>
 					<AddressBase>0x00000000</AddressBase>
 					<EndAddress>0x00008000</EndAddress>
 					<DeviceSize>1</DeviceSize>
