@@ -2,6 +2,9 @@
 
 FPONGA is a reimagining of the classic Pong game, implemented using Verilog on an FPGA board.
 
+## Demonstration
+
+
 ## Getting Started
 ### Prerequisites
 - An FPGA development board (e.g., Nandland GoBoard).
@@ -24,33 +27,31 @@ The Gameboard is set to 40×30 pixels, which is derived by dividing the standard
 ## Game Logic and Functional Blocks
 Each component of the game (paddles and ball) is handled by its respective module. These modules operate by comparing the current pixel’s Row/Col index to the position of the paddle or ball:
 
+![Pong Goboard](https://github.com/user-attachments/assets/76245fd1-4a4f-4842-861e-e967426a1423)
+
 ### Paddle and Ball Modules:
 - Each module tracks its position based on the current Row/Col index of the frame.
 - When the current pixel matches the component's location, the module outputs a high signal, prompting the main Pong Top module to render a white pixel.
 
 ### Modules Description
-- Paddle: Manages the movement and rendering of each paddle. It keeps track of its own position and ensures the paddle appears in the correct location on the board.
+- `Pong_Paddle.v`: Manages the movement and rendering of each paddle. It keeps track of its position and ensures the paddle appears in the correct location on the board.
 
-- Ball: Controls the movement and collision of the ball. It calculates the ball's position and determines when to render it based on its current coordinates.
+- `Pong_Ball.v`: Controls the movement and collision of the ball. It calculates the ball's position and determines when to render it based on its current coordinates.
 
-- Pong Top: The top-level module that coordinates the inputs from the paddle and ball modules to draw the game on the display. It integrates the outputs from each module and renders the game frame by frame. It also monitors and updates the game scores, which are displayed using a 7-segment display.
+- `Pong_Top.v:` The top-level module that coordinates the inputs from the paddle and ball modules to draw the game on the display. It integrates the outputs from each module and renders the game frame by frame. It also monitors and updates the game scores, which are displayed using a 7-segment display.
 
-- UART RX: The UART Receiver receives a start command from the computer to kick off the pong game. The UART receiver is configured to operate at 115200 baud with the following settings: 8 data bits, no parity, 1 stop bit, and no flow control. It also transmits the tracked score to the 7-segment display.
+- `UART_RX.v:` The UART Receiver receives a start command from the computer to kick off the pong game. The UART receiver is configured to operate at 115200 baud with the following settings: 8 data bits, no parity, 1 stop bit, and no flow control. It also transmits the tracked score to the 7-segment display.
 
-- 7-Segment Display: Displays the Score for each player from 0 to 9.
+- `Binary_To_7Segment.v:` Displays the Score for each player from 0 to 9.
 
-- Sync Pulse Generator:
+- `Sync To Count.v:` Generates row and column counters synchronized to VGA signals, resetting them at the start of each frame for accurate pixel tracking.
 
-- Sync To Count:
+- `VGA_Sync_Porch.v:` Handles VGA synchronization and video data processing. It generates the correct horizontal and vertical sync signals by accounting for the front and back porch intervals, ensuring proper timing for display. Additionally, it passes the video data for red, green, and blue colours through without modification, ensuring accurate colour representation on the display.
 
-- VGA Sync Porch:
+- `VGA_Sync_Pulses.v:` Generates horizontal and vertical sync pulses for VGA display timing. It counts columns and rows to track the current position within the frame.
 
-- VGA Top:
-
-- Debounce Switch:
+- `Debounce_Switch.v:` Ensures that brief, noisy changes in the switch input are ignored and only stable, long-duration changes are considered valid. This prevents rapid, unintended toggling due to switch bounce.
 
 
-
-![Pong Goboard](https://github.com/user-attachments/assets/76245fd1-4a4f-4842-861e-e967426a1423)
 
 
