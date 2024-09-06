@@ -1,9 +1,10 @@
 # FPONGA: Bringing Pong to Life with FPGA
 
-FPONGA is a reimagining of the classic Pong game, implemented using Verilog on an FPGA board.
+FPONGA is a reinterpretation of the classic Pong game, implemented using Verilog on an FPGA board.
 
 ## Demonstration
 
+Coming soon
 
 ## Getting Started
 ### Prerequisites
