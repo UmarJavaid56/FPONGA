@@ -1,1 +1,1 @@
-# Nandland-Go-Board-Projects
+# FPONGA: Bringing Pong to Life with FPGA
