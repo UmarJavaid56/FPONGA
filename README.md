@@ -12,7 +12,7 @@ Coming soon
 - Familiarity with Verilog and FPGA toolchains.
 
 ### Setup
-- Clone this repository: git clone https://github.com/YourUsername/FPONGA.git
+- Clone this repository: git clone https://github.com/UmarJavaid56/Nandland-Go-Board-Projects.git
 - Synthesize the Verilog code using your FPGA toolchain (e.g., Vivado, Quartus).
 - Program the FPGA board with the synthesized bitstream.
 
