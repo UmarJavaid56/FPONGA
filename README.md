@@ -2,6 +2,18 @@
 
 FPONGA is a reimagining of the classic Pong game, implemented using Verilog on an FPGA board.
 
+## Getting Started
+### Prerequisites
+- An FPGA development board (e.g., Nandland GoBoard).
+- Familiarity with Verilog and FPGA toolchains.
+
+### Setup
+- Clone this repository: git clone https://github.com/YourUsername/FPONGA.git
+- Synthesize the Verilog code using your FPGA toolchain (e.g., Vivado, Quartus).
+- Program the FPGA board with the synthesized bitstream.
+
+Connect the board to a display to start playing FPONGA!
+
 ## Overview 
 
 The implementation of FPONGA involves creating separate modules for each paddle and the ball. These modules interact with the main game board to render the game in real time.
@@ -27,7 +39,7 @@ Each component of the game (paddles and ball) is handled by its respective modul
 
 - 7-Segment Display: Displays the Score for each player from 0 to 9.
 
-- Sync Pulse Generator
+- Sync Pulse Generator:
 
 - Sync To Count:
 
@@ -41,18 +53,4 @@ Each component of the game (paddles and ball) is handled by its respective modul
 
 ![Pong Goboard](https://github.com/user-attachments/assets/76245fd1-4a4f-4842-861e-e967426a1423)
 
-Getting Started
-Prerequisites
-An FPGA development board (e.g., Nandland GoBoard).
-Familiarity with Verilog and FPGA toolchains.
-Setup
-Clone this repository:
 
-bash
-Copy code
-git clone https://github.com/YourUsername/FPONGA.git
-Synthesize the Verilog code using your FPGA toolchain (e.g., Vivado, Quartus).
-
-Program the FPGA board with the synthesized bitstream.
-
-Connect the board to a display to start playing FPONGA!
