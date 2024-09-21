@@ -4,7 +4,7 @@ FPONGA is a reinterpretation of the classic Pong game, implemented using Verilog
 
 ## Demonstration
 
-Coming soon
+[![YouTube Video](https://img.youtube.com/vi/gM5NCk0KDhk/0.jpg)](https://www.youtube.com/watch?v=gM5NCk0KDhk)
 
 ## Getting Started
 ### Prerequisites
